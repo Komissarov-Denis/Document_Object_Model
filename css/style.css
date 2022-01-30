@@ -1,0 +1,105 @@
+/*font-family: 'Playfair Display', serif;
+font-family: 'Ubuntu', sans-serif;*/
+
+body{
+	background-color: #000; /*rgba(230, 230, 20, 0.15);*/
+	background-image: url(../img/backgr_header.jpg);
+	background-repeat: no-repeat;
+	max-width: 2000px;
+	height: auto;
+}
+
+.container-fluid{
+	padding: 100px 50px 100px 50px;
+	margin: 0 auto;
+	max-width: 1200px;
+	display: block;
+	/*justify-content: center;
+	align-items: center ;*/
+}
+
+/*------------------------------------------------------Анимация SMOKE заголовка------------------------------------------------------*/
+
+.h2{	
+	font-family: 'Playfair Display', serif;
+	font-style: italic;
+	/*font-size: 60px;*/
+	font-size: calc(16px + 44 * (100vw / 2000));
+	font-weight: 600;
+	text-align: center;
+	color: rgba(255, 255, 255, 0.7);
+}
+
+.h2 span { 
+	display: inline-block;
+	cursor: pointer;
+}
+
+.active{
+	animation: smoke 10s linear forwards; 
+}
+
+@keyframes smoke{ 
+	15%{
+		color: rgb(235, 20, 165);
+	}
+
+	20%{
+		color: rgb(220, 240, 16);
+	}
+
+	35%{
+		color: rgb(38, 24, 240);
+	}
+
+	100%{		  
+	color: #5bff45;
+	transition: 2s;
+	filter: blur(20px);
+	opacity: 0;
+	transform: translateX(200px) translateY(-800px) rotate(-5deg) scale(1.0);
+	}
+}
+
+
+/*------------------------------------------------------Анимация параграфа №1-----------------------------------------------------*/
+
+.p1{
+	font-family: 'Ubuntu', sans-serif;
+	font-style: italic;
+	/*font-size: 48px;*/
+	font-size: calc(20px + 28 * (100vw / 2000));
+	font-weight: 400;
+	text-align: center;
+	color: rgba(255, 255, 255, 0.5);
+}
+
+
+/*------------------------------------------------------Анимация параграфа №2-----------------------------------------------------*/
+
+.p2{
+	font-family: 'Ubuntu', sans-serif;
+	font-style: italic;
+	/*font-size: 48px;*/
+	font-size: calc(20px + 28 * (100vw / 2000));
+	font-weight: 600;
+	text-align: center;
+	color: rgba(255, 255, 255, 0.9);
+	padding-top: 100px;
+}
+/*-----------------------------------------------------------Примечание-----------------------------------------------------------*/
+.p3{
+	font-family: 'Ubuntu', sans-serif;
+	font-style: italic;
+	/*font-size: 18px;*/
+	font-size: calc(9px + 9 * (100vw / 2000));
+	font-weight: 900;
+	text-align: left;
+	color: #ffffff;
+	/*padding-left: 530px;*/
+}
+
+footer{
+	max-width: 500px;
+	margin: 0 auto;
+}
